@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #demo {
+        width: 400px;
+        padding: 300px;
+        border: 5px solid;
+        margin: 50;
+        background-color: #cfc;
+        }
+        #demo1 {
+        width: 300px;
+        padding: 100px;
+        border: 5px solid;
+        margin: 50;
+        background-color: rgb(51, 23, 128);
+        }
+        #demo2 {
+        width: 200px;
+        padding: 50px;
+        border: 5px solid;
+        margin: 50;
+        background-color: rgb(23, 128, 76);
+        }
+        #epath {
+        width: 700px;
+        padding: 20px;
+        border: 5px solid;
+        margin: 50;
+        background-color: rgb(241, 167, 20);
+        }
+    </style>
+    <center><h1></h1> </center>
+    <div id="demo">
+        <div id="demo1">
+            <div id="demo2">
+                <div id="epath">
+                </div> 
+            </div>
+        </div>
+    </div>
+   
+    <script>
+        const myArray=["stone","paper","scissors"];
+        let outer=document.getElementById('demo');
+       outer.addEventListener('click',()=>{
+           myArray.forEach(e1=>{
+            
+           console.log(e1);
+           document.getElementById("demo").innerHTML=e1;
+       })});
+       let outer1=document.getElementById('demo1');
+       outer1.addEventListener('click',()=>{
+           myArray.forEach(e1=>{
+               myArray.pop();
+            myArray.push("rock");
+           console.log(e1);
+       })});
+    </script>
+</body>
+</html>

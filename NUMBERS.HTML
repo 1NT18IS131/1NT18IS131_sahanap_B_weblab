@@ -1,0 +1,35 @@
+<!-- Title:To check whether one of the two  numbers entered are 10 or if the sum is 10 -->
+<!-- Description:javascript program cretae function that takes two arguments of which  both are integers a,b .
+Return true if one of them is 10 or if their sum is 10  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="DOMS.css" />
+    <title>Check 10</title>
+  </head>
+
+  <script type="text/javascript" >
+var a = prompt("Enter the first number");
+var b = prompt("Enter the second number");
+console.log(a);
+console.log(b);
+a = parseInt(a);
+b = parseInt(b);
+console.log(a + b);
+check = () => {
+  if (a + b == 10 || a == 10 || b == 10) {
+    alert("TRUE");
+    window.setTimeout(() => location.reload, 1000);
+  } else {
+    alert("FALSE");
+    window.setTimeout(() => location.reload, 1000);
+  }
+};
+
+check();
+</script>
+</HTML>

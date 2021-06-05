@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="row.css" />
+    <title>Matrix</title>
+  </head>
+  <body>
+    <div class="grid-container" id="gc"></div>
+  </body>
+
+  <script type="text/javascript" >
+  var m = prompt("Enter row size");
+console.log(m);
+var n = prompt("Enter column size");
+
+for (let i = 0; i < n * m; i++) {
+  var div = document.createElement("div");
+  div.id = i + 1;
+  div.className = "grid-item";
+  var ip = prompt(`Enter input for element  ${i + 1}`);
+  var textnode = document.createTextNode(i + 1);
+  div.appendChild(textnode);
+  document.getElementById("gc").appendChild(div);
+}
+</script>
+</html>
