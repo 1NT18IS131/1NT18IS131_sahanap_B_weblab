@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>#GameBoardCanvas {
+    border: 1px solid red;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background: black;
+    height: 300px;
+    width: 300px;
+}
+
+</style>
+<body>
+    <div id="GameBoardCanvas" width="400px" height="400px">
+    </div>
+</body>
+<script>
+const newdiv=document.createElement("div");
+newdiv.style.width="10px";
+newdiv.style.height="20px";
+newdiv.style.backgroundColor="blue";
+newdiv.style.paddingLeft='20px';
+const newdiv1=document.createElement("div");
+newdiv1.style.width="9px";
+newdiv1.style.height="17px";
+newdiv1.style.paddingLeft='5px';
+newdiv1.style.backgroundColor="green";
+const newdiv2=document.createElement("div");
+newdiv2.style.width="9px";
+newdiv2.style.height="17px";
+newdiv2.style.paddingLeft='5px';
+newdiv2.style.backgroundColor="grey";
+const newdiv3=document.createElement("div");
+newdiv3.style.width="30px";
+newdiv3.style.height="6px";
+newdiv3.style.paddingLeft='5px';
+newdiv3.style.backgroundColor="orange";
+const newdiv4=document.createElement("div");
+newdiv4.setAttribute("id","div4");
+newdiv3.style.width="50px";
+newdiv3.style.height="10px";
+newdiv3.style.paddingLeft='5px';
+newdiv3.style.backgroundColor="orange";
+document.getElementById('GameBoardCanvas').append(newdiv);
+document.getElementById('GameBoardCanvas').append(newdiv1);
+document.getElementById('GameBoardCanvas').append(newdiv2);
+document.getElementById('GameBoardCanvas').append(newdiv3);
+//let remElement= document.getElementById('div4');
+//remElement.addEventListener('click',e=>{remElement.remove();}
+//let remElement= document.querySelector('div');
+//remElement.addEventListener('click',e=>{remElement.remove();})
+let divs=document.querySelectorAll('div')
+divs.forEach(
+    div=>{
+
+        div.addEventListener('click',()=>{
+    console.log("u clicked a div");
+}
+)})
+</script>
+</html>
