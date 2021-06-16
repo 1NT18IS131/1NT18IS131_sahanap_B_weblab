@@ -1,0 +1,84 @@
+<!-- Title:To build a castle -->
+<!-- Description:To explore addEventListener events -->
+<!-- Name:SAHANA P -->
+<!-- Usn:1NT18IS131-->
+<!-- Date:08-04-2021 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Castle</title>
+</head>
+
+<body>
+
+    <style>
+        #a {
+            width: 500px;
+            padding: 300px;
+            border: 5px solid;
+            margin: 50;
+            background-color: purple;
+        }
+        
+        #b {
+            width: 400px;
+            padding: 100px;
+            border: 5px solid;
+            margin: 50;
+            background-color: cyan;
+        }
+        
+        #c {
+            width: 300px;
+            padding: 50px;
+            border: 5px solid;
+            margin: 50;
+            background-color: red;
+        }
+        
+        #path {
+            padding: 20px;
+            border: 5px solid;
+            margin: 50;
+            background-color: yellowgreen;
+        }
+    </style>
+    <center>
+        <h1>Welcome To the Castle</h1>
+    </center>
+    <div id="a">
+        <div id="b">
+            <div id="c">
+                <div id="path">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let first = document.getElementById('a');
+        first.addEventListener('mouseover', () => {
+            console.log('You have entered castle');
+        })
+        let second = document.getElementById('b');
+        second.addEventListener('mouseover', () => {
+            console.log('You have entered garden');
+        })
+        let third = document.getElementById('c');
+        third.addEventListener('dblclick', () => {
+            console.log("You are in inner zone");
+        })
+        fourth = document.getElementById('path');
+        fourth.addEventListener('click', () => {
+            console.log('You are on the escape path');
+        })
+    </script>
+
+</body>
+
+</html>
